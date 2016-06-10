@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="modulo1">
+<head>
+	<title>
+		angular
+	</title>
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/modulo.js"></script>
+</head>
+<body >
+	<div ng-controller="c1">
+		
+		nombre<input type="" name="" ng-model="nuevo.nombre"><br>
+		edad<input type="" name="" ng-model="nuevo.edad"><br>
+		<button ng-click="agregar();"></button>-
+		<button ng-click="invertir();">Invertir</button>
+		<ul ng-repeat="e in arreglo">
+			<li>{{e.nombre}}</li>
+			<li>{{e.edad}}</li>
+		</ul>
+
+	</div>
+	<div ng-controller="c2">
+		{{edad}}-{{edad2}}--{{edad-edad2}}
+	</div>
+
+</body>
+</html>
