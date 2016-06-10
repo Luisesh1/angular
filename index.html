@@ -21,7 +21,13 @@
 
 	</div>
 	<div ng-controller="c2">
-		{{edad}}-{{edad2}}--{{edad-edad2}}
+		title<input type="" name="" ng-model="nuevo.title"><br>
+		body<input type="" name="" ng-model="nuevo.body"><br>
+		<button ng-click="agregar();">Agregar</button>
+		<ul ng-repeat="e in arreglo">
+			<li>{{e.title}}</li>
+			<li>{{e.body}}</li>
+		</ul>
 	</div>
 
 </body>
